@@ -145,7 +145,7 @@ def edit_board():
 
 @app.route("/citation")
 def citation():
-    t = "How to cite LMFDB"
+    t = "How to cite the LMFDB"
     b = [(t, url_for("citation"))]
     return render_template(_single_knowl, title=t, kid='content.how-to-cite', body_class='', bread=b)
 

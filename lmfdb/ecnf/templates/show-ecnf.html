@@ -59,7 +59,7 @@ function show_code(system) {
   <h2>  Base field   {{ ec.field.knowl()|safe }} </h2>
 <p>
  {{ KNOWL('nf.generator', 'Generator') }} \({{
- ec.field.generator_name() }}\), with {{
+ ec.field.generator_name() }}\) with {{
  KNOWL('nf.minimal_polynomial', 'minimal polynomial') }}
  \({{ec.field.poly()}}\); {{ KNOWL('nf.class_number', 'class number')
  }} \({{ec.field.class_number()}}\).
@@ -185,7 +185,7 @@ cellpadding="5";
         <td>{{ ec.End }}</td>
         <td>&nbsp;</td>
         <td>({%if not ec.cm %}no {%endif %}
-   {{ KNOWL('ec.complex_multiplication', title='Complex Multiplication')}}
+   {{ KNOWL('ec.complex_multiplication', title='complex multiplication')}}
             )
         </td>
         </tr>

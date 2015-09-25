@@ -189,7 +189,7 @@ src="http://code.jquery.com/jquery-latest.min.js"></script>
         <td>{{ data.data.EndE }}</td>
         <td>&nbsp;</td>
         <td>({%if not data.data.CMD %}no {%endif %}
-{{ KNOWL('ec.complex_multiplication', title='Complex Multiplication') }})
+{{ KNOWL('ec.complex_multiplication', title='complex multiplication') }})
         </td>
         </tr>
 
@@ -393,7 +393,7 @@ data.twoadic_index }}.
 {% if data.data.CMD %}
 The mod \( p \) {{KNOWL('ec.galois_rep', title='Galois
 representations')}} of an elliptic curve with {{
-KNOWL('ec.complex_multiplication', title='Complex Multiplication') }}
+KNOWL('ec.complex_multiplication', title='complex multiplication') }}
 are non-surjective for all primes \( p \).  We only show the image for
 primes \( p\le 37 \).
 {% else %}
@@ -433,7 +433,7 @@ All \(p\)-adic regulators are identically \(1\) since the rank is \(0\).
 {% else %}
 {% if data.data.p_adic_data_exists %}
 <p>
-Note: \(p\)-adic data only exists for primes \(p\ge5\) of good ordinary
+Note: \(p\)-adic data only exist for primes \(p\ge5\) of good ordinary
 reduction.
 </p>
         <select onchange="$('#padic').load('{{url_for('.padic_data', label=data.lmfdb_label, p='xxx', rank=data.mw.rank).replace('xxx', "'+this.value+'")}}', function() { MathJax.Hub.Queue(['Typeset',MathJax.Hub,'padic']);}); ">
@@ -445,7 +445,7 @@ reduction.
         <div id='padic'>
         </div>
 {% elif data.data.Gamma0optimal %}
-No \(p\)-adic data exists for this curve.
+No \(p\)-adic data exist for this curve.
 {% else %}
 \(p\)-adic regulators are not yet computed for curves that are not \(\Gamma_0\)-optimal.
 {% endif %}
